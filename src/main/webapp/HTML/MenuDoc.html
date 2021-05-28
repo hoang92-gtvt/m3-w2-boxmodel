@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Doc</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #menu, #menu ul, #menu li{
+        /*#menu{*/
+            padding:0;
+            margin:0;
+        }
+
+        #menu li{
+            list-style: none;
+            position: relative;
+            /*left: 50px;*/
+            width:100px;
+            height: 30px;
+            padding:0 20px;
+            background-color: black;
+            line-height: 30px;
+            cursor:pointer;
+        }
+
+        #menu li a{
+            text-decoration:none;
+            color: white;
+        }
+
+        #menu li:hover{
+            background-color:red;
+        }
+
+        #menu ul ul{
+            position: absolute;
+            top:0;
+            left:140px;
+            visibility:hidden;
+        }
+
+        #menu ul li:hover ul{
+            visibility:visible;
+        }
+    </style>
+
+</head>
+<body>
+<h3>ACCP i10</h3>
+<div id="menu">
+    <ul>
+        <li><a href="#">Sem 1</a>
+            <ul>
+                <li><a href="#">Computing Fundametal</a></li>
+                <li><a href="#">C Programming</a></li>
+                <li><a href="#">Building Dynamic Website</a></li>
+                <li><a href="#">MS Transact-SQL</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">ProjectA</a></li>
+                <li><a href="#">ProjectB</a></li>
+                <li><a href="#">ProjectC</a></li>
+                <li><a href="#">ProjectD</a></li>
+                <li><a href="#">ProjectE</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem 2 </a>
+            <ul>
+                <li><a href="#">Cloud Computing</a></li>
+                <li><a href="#">APJ - I</a></li>
+                <li><a href="#">APJ - II</a></li>
+                <li><a href="#">APJ - III</a></li>
+                <li><a href="#">eProject</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem 3</a></li>
+        <li><a href="#">Sem 4</a></li>
+    </ul>
+
+<!--    <ol type="A">-->
+<!--        <li><a href="#">Sem A</a></li>-->
+<!--        <li><a href="#">Sem B</a></li>-->
+<!--    </ol>-->
+</div>
+</body>
+</html>
